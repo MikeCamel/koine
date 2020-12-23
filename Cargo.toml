@@ -9,6 +9,8 @@ license = "Apache-2.0"
 
 [dependencies]
 ciborium = { git = "https://github.com/enarx/ciborium", rev ="bcaec75", features = ["serde", "std"] }
+#added to take https://github.com/connorkuehl/koine/commit/c6dc4613d1018381eb87c33cd67e9e1bc2a6da48
+sev = { git = "https://github.com/connorkuehl/sev", branch = "serdles-all-the-way-down" }
 serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "0.2", features = ["macros", "sync"] }
 uuid = { version = "0.8", features = ["serde", "v4"] }
